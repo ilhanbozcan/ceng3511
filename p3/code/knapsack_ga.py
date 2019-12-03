@@ -160,6 +160,8 @@ def Mutation(pop,prob):
     chromosome_index = random.randint(0,int(len(pop)-1))
     gen_index = random.randint(0,int(len(pop[0])-1))
     if probability[0] == 1:
+        # mutatitioned chromosome age set 0
+        age[chromosome_index] = 0
         if pop[chromosome_index][gen_index] == 1:
             pop[chromosome_index][gen_index] = 0
         else:
@@ -221,7 +223,7 @@ def Elitisim(pop,nextPop):
 
     nextPop[min_index] = pop[max_index]
     #age set 0
-    age[max_index] = 0
+    age[min_index] = age[max_index]
 
     return nextPop
 
