@@ -1,3 +1,7 @@
+#İlhan BOZCAN 160709003
+#Güray COŞKUN 160709034
+
+
 import csv
 import random
 import math
